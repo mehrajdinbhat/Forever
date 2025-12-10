@@ -8,11 +8,13 @@ const Navbar = () => {
   return (
     <div className="w-full flex items-center justify-between py-4 px-4 md:px-10 font-medium">
       {/* Logo */}
-      <img
-        src={assets.logo}
-        className="w-28 md:w-36 object-contain"
-        alt="logo"
-      />
+      <Link to={'/'}>
+        <img
+          src={assets.logo}
+          className="w-28 md:w-36 object-contain"
+          alt="logo"
+        />
+      </Link>
 
       {/* Right Section */}
       <div className="flex items-center gap-4 md:gap-6">
